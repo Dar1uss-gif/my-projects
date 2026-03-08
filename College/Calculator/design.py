@@ -271,13 +271,5 @@ class Ui_MainWindow(object):
         self.btn_minus.setText(_translate("MainWindow", "-"))
         self.btn_divide.setText(_translate("MainWindow", "÷"))
         self.btn_equal.setText(_translate("MainWindow", "="))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
     sys.exit(app.exec_())
+
