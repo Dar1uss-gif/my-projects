@@ -14,12 +14,12 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(309, 484)
+        MainWindow.resize(309, 529)
         MainWindow.setStyleSheet("background-color: rgb(0, 0, 0);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(10, 0, 291, 91))
+        self.label.setGeometry(QtCore.QRect(10, 0, 291, 161))
         font = QtGui.QFont()
         font.setFamily("Consolas")
         font.setPointSize(35)
@@ -180,18 +180,6 @@ class Ui_MainWindow(object):
 "background-color: rgb(144, 144, 144);\n"
 "border-radius: 30px;")
         self.btn_6.setObjectName("btn_6")
-        self.btn_equal = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_equal.setGeometry(QtCore.QRect(20, 100, 271, 61))
-        font = QtGui.QFont()
-        font.setFamily("Consolas")
-        font.setPointSize(26)
-        font.setBold(True)
-        font.setWeight(75)
-        self.btn_equal.setFont(font)
-        self.btn_equal.setStyleSheet("color: rgb(255, 255, 255);\n"
-"background-color: rgb(255, 170, 0);\n"
-"border-radius: 30px;")
-        self.btn_equal.setObjectName("btn_equal")
         self.btn_multiply = QtWidgets.QPushButton(self.centralwidget)
         self.btn_multiply.setGeometry(QtCore.QRect(230, 170, 61, 61))
         font = QtGui.QFont()
@@ -241,14 +229,23 @@ class Ui_MainWindow(object):
 "background-color:rgb(255, 170, 0);\n"
 "border-radius: 30px;")
         self.btn_divide.setObjectName("btn_divide")
+        self.btn_equal = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_equal.setGeometry(QtCore.QRect(20, 450, 271, 61))
+        font = QtGui.QFont()
+        font.setFamily("Consolas")
+        font.setPointSize(26)
+        font.setBold(True)
+        font.setWeight(75)
+        self.btn_equal.setFont(font)
+        self.btn_equal.setStyleSheet("color: rgb(255, 255, 255);\n"
+"background-color: rgb(255, 170, 0);\n"
+"border-radius: 30px;")
+        self.btn_equal.setObjectName("btn_equal")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 309, 21))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow)
-        self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -269,11 +266,11 @@ class Ui_MainWindow(object):
         self.btn_9.setText(_translate("MainWindow", "9"))
         self.btn_3.setText(_translate("MainWindow", "3"))
         self.btn_6.setText(_translate("MainWindow", "6"))
-        self.btn_equal.setText(_translate("MainWindow", "="))
         self.btn_multiply.setText(_translate("MainWindow", "ⅹ"))
         self.btn_plus.setText(_translate("MainWindow", "+"))
         self.btn_minus.setText(_translate("MainWindow", "-"))
         self.btn_divide.setText(_translate("MainWindow", "÷"))
+        self.btn_equal.setText(_translate("MainWindow", "="))
 
 
 if __name__ == "__main__":
