@@ -1,0 +1,4 @@
+#!/bin/bash
+source ~/Desktop/PythonMy/.venv/bin/activate
+export PYTHONPATH="/Users/sa1nt/Desktop/PythonMy/FileManager/root"
+python3 -m filemanager.main "$@"
